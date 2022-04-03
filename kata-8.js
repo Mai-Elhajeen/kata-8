@@ -6,7 +6,18 @@ Assume the test input string is always a valid string. For example, the test inp
 The first character in the string is always a number.
 */
 
-function getAge(inputString){
-    return parseInt(inputString)
+// function getAge(inputString){
+//     return parseInt(inputString)
+// }
+// console.log(getAge("3 year old"));
+
+// ************************************************************************************************************************
+
+// ? Function 3 - multiplying two numbers
+/*
+Implement a function which multiplies two numbers.
+*/
+function multiply (a, b){
+    return a * b
 }
-console.log(getAge("3 year old"));
+console.log(multiply(5, 9))
