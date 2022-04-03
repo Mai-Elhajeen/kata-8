@@ -17,3 +17,7 @@ The first character in the string is always a number.
 /*
 Implement a function which multiplies two numbers.
 */
+function multiply (a, b){
+    return a * b
+}
+console.log(multiply(5, 9))
