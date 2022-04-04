@@ -155,40 +155,75 @@ Example
 For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
 */ 
 
-function countPositivesSumNegatives (input) {
-    let count = 0;
-    let sum = 0;
-    if (input != null){
-        for (let i = 0; i < input.length; i++) {
-            if(input[i] > 0){
-                count++
-            }else if(input[i] < 0){
-                sum += input[i]
-            }
-        }
-        if(count == 0 && sum == 0){
-            return []
-        }else{
-            return [count, sum]
-        }
-    }else{
-        return []
-    }
-}
+// function countPositivesSumNegatives (input) {
+//     let count = 0;
+//     let sum = 0;
+//     if (input != null){
+//         for (let i = 0; i < input.length; i++) {
+//             if(input[i] > 0){
+//                 count++
+//             }else if(input[i] < 0){
+//                 sum += input[i]
+//             }
+//         }
+//         if(count == 0 && sum == 0){
+//             return []
+//         }else{
+//             return [count, sum]
+//         }
+//     }else{
+//         return []
+//     }
+// }
 // countPositivesSumNegatives([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15])
-console.log(countPositivesSumNegatives([0, 0]));
+// console.log(countPositivesSumNegatives([0, 0]));
 
-function countPositivesSumNegatives(input) {
-    let arr = []
-    if (input !== null){
-        let positiveArr = input.filter(e => e>0).length
-        let negativeArr = input.filter(x => x<0).reduce((c,n)=> c+n,0)
-        if(positiveArr != [0] ||negativeArr !=[0]){
-            arr.push(positiveArr,negativeArr)
-        }
-        return arr
-    } else{
-        return []
+// function countPositivesSumNegatives(input) {
+//     let arr = []
+//     if (input !== null){
+//         let positiveArr = input.filter(e => e>0).length
+//         let negativeArr = input.filter(x => x<0).reduce((c,n)=> c+n,0)
+//         if(positiveArr != [0] ||negativeArr !=[0]){
+//             arr.push(positiveArr,negativeArr)
+//         }
+//         return arr
+//     } else{
+//         return []
+//     }
+// }
+// console.log(countPositivesSumNegatives([0, 0]));
+
+// ************************************************************************************************************************
+ // ? Find the Remainder
+/*
+Task:
+Write a function that accepts two integers and returns the remainder of dividing the larger value by the smaller value.
+
+Division by zero should return NaN.
+
+Examples:
+n = 17
+m = 5
+result = 2 (remainder of `17 / 5`)
+
+n = 13
+m = 72
+result = 7 (remainder of `72 / 13`)
+
+n = 0
+m = -1
+result = 0 (remainder of `0 / -1`)
+
+n = 0
+m = 1
+result - division by zero (refer to the specifications on how to handle this in your language)
+*/
+
+function remainder(n ,m){
+    if(n>=m){
+        return n%m
+    }else if (m>n){
+        return m%n
     }
 }
-console.log(countPositivesSumNegatives([0, 0]));
+console.log(remainder(4,0))
