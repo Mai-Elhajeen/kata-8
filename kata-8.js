@@ -61,6 +61,13 @@ What ways of achieving this do you know?
 output : 123 --> "123" || 999 --> "999"
 */
 
-function numberToString(num) {
-    return num.toString();
-}
+// function numberToString(num) {
+//     return num.toString();
+// }
+
+// ************************************************************************************************************************
+
+// ? Convert boolean values to strings 'Yes' or 'No'.
+/*
+Complete the method that takes a boolean value and return a "Yes" string for true, or a "No" string for false.
+*/
