@@ -102,7 +102,43 @@ Example: (Input1, Input2 -->Output)
 "-5", "3" --> "-2"
 */
 
-function sumStr(a,b) {
-    const total = Number(a) + Number(b);
-    return total.toString()
+// function sumStr(a,b) {
+//     const total = Number(a) + Number(b);
+//     return total.toString()
+// }
+
+// ************************************************************************************************************************
+
+// ? Exclamation marks series #1: Remove an exclamation mark from the end of string
+/* 
+Remove an exclamation mark from the end of a string. 
+For a beginner kata, you can assume that the input data is always a string, no need to verify it.
+remove("Hi!") === "Hi"
+remove("Hi!!!") === "Hi!!"
+remove("!Hi") === "!Hi"
+remove("!Hi!") === "!Hi"
+remove("Hi! Hi!") === "Hi! Hi"
+remove("Hi") === "Hi"
+*/
+
+function remove(string){
+    let arr = string.split('');
+    console.log(arr);
+    let lastStr = arr.slice(-1)
+    console.log(lastStr);
+    if(lastStr == '!'){
+        arr.pop()
+        return arr.join('')
+    }else{
+        return string
+    }
+}
+console.log(remove('!Hi!!!'))
+
+function remove (string) {
+    let splitArr = string.split('');
+    if(splitArr[splitArr.length-1] === '!'){
+        splitArr.pop()
+    }
+    return splitArr.join('')
 }
