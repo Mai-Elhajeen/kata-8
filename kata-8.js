@@ -313,43 +313,29 @@ Example:
 
 // ************************************************************************************************************************
 
-// ? Sum Arrays
-
-/* Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
-
-Examples
-Input: [1, 5.2, 4, 0, -1]
-Output: 9.2
-
-Input: []
-Output: 0
-
-Input: [-2.398]
-Output: -2.398
+// ? Array plus array
+/*
+I'm new to coding and now I want to get the sum of two arrays...actually the sum of all their elements. 
+I'll appreciate for your help.
+P.S. Each array includes only integer numbers. Output is a number too.
 */
 
-function sum (numbers){
-    let sum = 0; 
-    for(let i of numbers){
-        if(i != null){
-            sum += i
-        }else if(i = null){
-            return 0
-        }else{
-            return i
-        }
-    }
-    return sum;
-}
-console.log(sum([-2.398]))
-// Output: 9.2
-
-
-sum = (numbers) => {
+function arrayPlusArray (arr1, arr2){
     let sum = 0;
-    for(let i of numbers){
-        i != null ? sum += i : 0;
+    newArray =  arr1.concat(arr2)
+    for(let i of newArray){
+        sum += i;
     }
     return sum
 }
-console.log(sum([-2.398]))
+console.log(arrayPlusArray ([1, 2, 3] , [4, 5, 6]))
+
+arrayPlusArray = (arr1, arr2) => {
+    let sum = 0;
+    newArray =  arr1.concat(arr2)
+    for(let i of newArray){
+        sum += i;
+    }
+    return sum
+}
+console.log(arrayPlusArray ([1, 2, 3] , [4, 5, 6]))
