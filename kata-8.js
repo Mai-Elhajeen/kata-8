@@ -47,10 +47,10 @@ return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will alwa
 Write a function to split a string and convert it into an array of words.
 output: * "Robin Singh" ==> ["Robin", "Singh"]
 */
-function stringToArray(string){
-    // code code code
-    return string.split(' ');
-}
+
+// function stringToArray(string){
+//     return string.split(' ');
+// }
 
 // ************************************************************************************************************************
 
@@ -59,4 +59,8 @@ function stringToArray(string){
 We need a function that can transform a number into a string.
 What ways of achieving this do you know?
 output : 123 --> "123" || 999 --> "999"
-*/ 
+*/
+
+function numberToString(num) {
+    return num.toString();
+}
