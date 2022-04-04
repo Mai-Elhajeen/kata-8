@@ -219,3 +219,11 @@ m = 1
 result - division by zero (refer to the specifications on how to handle this in your language)
 */
 
+function remainder(n ,m){
+    if(n>=m){
+        return n%m
+    }else if (m>n){
+        return m%n
+    }
+}
+console.log(remainder(4,0))
