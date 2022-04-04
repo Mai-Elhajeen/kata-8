@@ -327,3 +327,29 @@ Output: 0
 Input: [-2.398]
 Output: -2.398
 */
+
+function sum (numbers){
+    let sum = 0; 
+    for(let i of numbers){
+        if(i != null){
+            sum += i
+        }else if(i = null){
+            return 0
+        }else{
+            return i
+        }
+    }
+    return sum;
+}
+console.log(sum([-2.398]))
+// Output: 9.2
+
+
+sum = (numbers) => {
+    let sum = 0;
+    for(let i of numbers){
+        i != null ? sum += i : 0;
+    }
+    return sum
+}
+console.log(sum([-2.398]))
