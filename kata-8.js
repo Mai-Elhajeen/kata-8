@@ -302,3 +302,11 @@ Example:
 0 => [0]
 */
 
+function digits (n){
+    let newArray =  String(n).split('').map(n =>{
+        return Number(n)
+    })
+    return newArray.reverse()
+}
+// digits(348597)
+console.log(digits(348597))
