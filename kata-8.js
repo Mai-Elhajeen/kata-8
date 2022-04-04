@@ -102,3 +102,7 @@ Example: (Input1, Input2 -->Output)
 "-5", "3" --> "-2"
 */
 
+function sumStr(a,b) {
+    const total = Number(a) + Number(b);
+    return total.toString()
+}
