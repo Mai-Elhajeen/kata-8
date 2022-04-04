@@ -194,6 +194,7 @@ For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should r
 // console.log(countPositivesSumNegatives([0, 0]));
 
 // ************************************************************************************************************************
+
  // ? Find the Remainder
 /*
 Task:
@@ -219,11 +220,20 @@ m = 1
 result - division by zero (refer to the specifications on how to handle this in your language)
 */
 
-function remainder(n ,m){
-    if(n>=m){
-        return n%m
-    }else if (m>n){
-        return m%n
-    }
-}
-console.log(remainder(4,0))
+// function remainder(n ,m){
+//     if(n>=m){
+//         return n%m
+//     }else if (m>n){
+//         return m%n
+//     }
+// }
+// console.log(remainder(4,0))
+
+// ************************************************************************************************************************
+
+// ? Sum of positive
+/*
+You get an array of numbers, return the sum of all of the positives ones.
+Example [1,-4,7,12] => 1 + 7 + 12 = 20
+Note: if there is nothing to sum, the sum is default to 0.
+*/
