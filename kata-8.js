@@ -120,3 +120,25 @@ remove("!Hi!") === "!Hi"
 remove("Hi! Hi!") === "Hi! Hi"
 remove("Hi") === "Hi"
 */
+
+function remove(string){
+    let arr = string.split('');
+    console.log(arr);
+    let lastStr = arr.slice(-1)
+    console.log(lastStr);
+    if(lastStr == '!'){
+        arr.pop()
+        return arr.join('')
+    }else{
+        return string
+    }
+}
+console.log(remove('!Hi!!!'))
+
+function remove (string) {
+    let splitArr = string.split('');
+    if(splitArr[splitArr.length-1] === '!'){
+        splitArr.pop()
+    }
+    return splitArr.join('')
+}
