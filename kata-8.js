@@ -47,3 +47,7 @@ return a string with a murmur: "1 sheep...2 sheep...3 sheep...". Input will alwa
 Write a function to split a string and convert it into an array of words.
 output: * "Robin Singh" ==> ["Robin", "Singh"]
 */
+function stringToArray(string){
+    // code code code
+    return string.split(' ');
+}
