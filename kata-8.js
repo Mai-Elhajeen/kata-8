@@ -272,22 +272,41 @@ Complete the square sum function so that it squares each number passed into it a
 For example, for [1, 2, 2] it should return 9 because 1^2 + 2^2 + 2^2 = 9
 */ 
 
-function squareSum (numbers){
-    let sum = 0;
-    for(let i=0; i<numbers.length; i++){
-        let square = numbers[i] * numbers[i]
-        sum += square
-    }
-    return sum
-}
-console.log(squareSum([1, 2, 2]))
+// function squareSum (numbers){
+//     let sum = 0;
+//     for(let i=0; i<numbers.length; i++){
+//         let square = numbers[i] * numbers[i]
+//         sum += square
+//     }
+//     return sum
+// }
+// console.log(squareSum([1, 2, 2]))
 
-squareSum = (numbers) => {
-    let sum = 0;
-    for(let i of numbers){
-        let square = i * i
-        sum += square
-    }
-    return sum
+// squareSum = (numbers) => {
+//     let sum = 0;
+//     for(let i of numbers){
+//         let square = i * i
+//         sum += square
+//     }
+//     return sum
+// }
+// console.log(squareSum([1, 2, 2]))
+
+// ************************************************************************************************************************
+
+// ? Convert number to reversed array of digits
+/*
+Given a random non-negative number, you have to return the digits of this number within an array in reverse order.
+Example:
+348597 => [7,9,5,8,4,3]
+0 => [0]
+*/
+
+function digits (n){
+    let newArray =  String(n).split('').map(n =>{
+        return Number(n)
+    })
+    return newArray.reverse()
 }
-console.log(squareSum([1, 2, 2]))
+// digits(348597)
+console.log(digits(348597))
