@@ -302,11 +302,28 @@ Example:
 0 => [0]
 */
 
-function digits (n){
-    let newArray =  String(n).split('').map(n =>{
-        return Number(n)
-    })
-    return newArray.reverse()
-}
-// digits(348597)
-console.log(digits(348597))
+// function digits (n){
+//     let newArray =  String(n).split('').map(n =>{
+//         return Number(n)
+//     })
+//     return newArray.reverse()
+// }
+// // digits(348597)
+// console.log(digits(348597))
+
+// ************************************************************************************************************************
+
+// ? Sum Arrays
+
+/* Write a function that takes an array of numbers and returns the sum of the numbers. The numbers can be negative or non-integer. If the array does not contain any numbers then you should return 0.
+
+Examples
+Input: [1, 5.2, 4, 0, -1]
+Output: 9.2
+
+Input: []
+Output: 0
+
+Input: [-2.398]
+Output: -2.398
+*/
