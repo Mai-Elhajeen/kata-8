@@ -121,24 +121,37 @@ remove("Hi! Hi!") === "Hi! Hi"
 remove("Hi") === "Hi"
 */
 
-function remove(string){
-    let arr = string.split('');
-    console.log(arr);
-    let lastStr = arr.slice(-1)
-    console.log(lastStr);
-    if(lastStr == '!'){
-        arr.pop()
-        return arr.join('')
-    }else{
-        return string
-    }
-}
-console.log(remove('!Hi!!!'))
+// function remove(string){
+//     let arr = string.split('');
+//     console.log(arr);
+//     let lastStr = arr.slice(-1)
+//     console.log(lastStr);
+//     if(lastStr == '!'){
+//         arr.pop()
+//         return arr.join('')
+//     }else{
+//         return string
+//     }
+// }
+// console.log(remove('!Hi!!!'))
 
-function remove (string) {
-    let splitArr = string.split('');
-    if(splitArr[splitArr.length-1] === '!'){
-        splitArr.pop()
-    }
-    return splitArr.join('')
-}
+// function remove (string) {
+//     let splitArr = string.split('');
+//     if(splitArr[splitArr.length-1] === '!'){
+//         splitArr.pop()
+//     }
+//     return splitArr.join('')
+// }
+
+// ************************************************************************************************************************
+
+// ? Count of positives / sum of negatives
+/* 
+Given an array of integers.
+Return an array, where the first element is the count of positives numbers and the second element is sum of negative numbers.
+0 is neither positive nor negative.
+If the input is an empty array or is null, return an empty array.
+Example
+For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should return [10, -65].
+*/ 
+
