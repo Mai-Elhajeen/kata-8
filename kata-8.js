@@ -351,3 +351,19 @@ Example:
 ["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
 None of the arrays will be empty, so you don't have to worry about that!
 */
+
+// function removeEveryOther(arr){
+//     for (let i=1; i<arr.length; i++){
+//         arr.splice(i,1);
+//     }
+//     return arr;
+// }
+// console.log(removeEveryOther (["Keep", "Remove", "Keep", "Remove", "Keep"]))
+
+removeEveryOther = (arr) => {
+    for (let i=1; i<arr.length; i++){
+        arr.splice(i,1);
+    }
+    return arr;
+}
+console.log(removeEveryOther (["Keep", "Remove", "Keep", "Remove", "Keep"]))
