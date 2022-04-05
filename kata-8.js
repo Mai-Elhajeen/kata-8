@@ -320,22 +320,50 @@ I'll appreciate for your help.
 P.S. Each array includes only integer numbers. Output is a number too.
 */
 
-function arrayPlusArray (arr1, arr2){
-    let sum = 0;
-    newArray =  arr1.concat(arr2)
-    for(let i of newArray){
-        sum += i;
-    }
-    return sum
-}
-console.log(arrayPlusArray ([1, 2, 3] , [4, 5, 6]))
+// function arrayPlusArray (arr1, arr2){
+//     let sum = 0;
+//     newArray =  arr1.concat(arr2)
+//     for(let i of newArray){
+//         sum += i;
+//     }
+//     return sum
+// }
+// console.log(arrayPlusArray ([1, 2, 3] , [4, 5, 6]))
 
-arrayPlusArray = (arr1, arr2) => {
-    let sum = 0;
-    newArray =  arr1.concat(arr2)
-    for(let i of newArray){
-        sum += i;
+// arrayPlusArray = (arr1, arr2) => {
+//     let sum = 0;
+//     newArray =  arr1.concat(arr2)
+//     for(let i of newArray){
+//         sum += i;
+//     }
+//     return sum
+// }
+// console.log(arrayPlusArray ([1, 2, 3] , [4, 5, 6]))
+
+
+// ************************************************************************************************************************
+
+// ? Removing Elements
+/*
+Take an array and remove every second element from the array. 
+Always keep the first element and start removing with the next element.
+Example:
+["Keep", "Remove", "Keep", "Remove", "Keep", ...] --> ["Keep", "Keep", "Keep", ...]
+None of the arrays will be empty, so you don't have to worry about that!
+*/
+
+// function removeEveryOther(arr){
+//     for (let i=1; i<arr.length; i++){
+//         arr.splice(i,1);
+//     }
+//     return arr;
+// }
+// console.log(removeEveryOther (["Keep", "Remove", "Keep", "Remove", "Keep"]))
+
+removeEveryOther = (arr) => {
+    for (let i=1; i<arr.length; i++){
+        arr.splice(i,1);
     }
-    return sum
+    return arr;
 }
-console.log(arrayPlusArray ([1, 2, 3] , [4, 5, 6]))
+console.log(removeEveryOther (["Keep", "Remove", "Keep", "Remove", "Keep"]))
