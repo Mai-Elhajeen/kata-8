@@ -396,3 +396,15 @@ Examples (Input -> Output)
 * [42, 54, 65, 87, 0]             -> min = 0, max = 87
 * [5]                             -> min = 5, max = 5
 */
+
+var min = function(list){
+    
+    return Math.min(...list);;
+}
+console.log(min([4,6,2,1,9,63,-134,566]))
+
+var max = function(list){
+    
+    return Math.max(...list);;
+}
+console.log(max([4,6,2,1,9,63,-134,566]))
