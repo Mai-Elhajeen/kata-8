@@ -360,10 +360,24 @@ None of the arrays will be empty, so you don't have to worry about that!
 // }
 // console.log(removeEveryOther (["Keep", "Remove", "Keep", "Remove", "Keep"]))
 
-removeEveryOther = (arr) => {
-    for (let i=1; i<arr.length; i++){
-        arr.splice(i,1);
-    }
-    return arr;
+// removeEveryOther = (arr) => {
+//     for (let i=1; i<arr.length; i++){
+//         arr.splice(i,1);
+//     }
+//     return arr;
+// }
+// console.log(removeEveryOther (["Keep", "Remove", "Keep", "Remove", "Keep"]))
+
+// ************************************************************************************************************************
+// ? Returning Strings
+/*
+Make a function that will return a greeting statement that uses an input; 
+your program should return, "Hello, <name> how are you doing today?".
+[Make sure you type the exact thing I wrote or the program may not execute properly]
+*/
+
+function greet(name){
+    //your code here
+    return `Hello, ${name} how are you doing today?`
 }
-console.log(removeEveryOther (["Keep", "Remove", "Keep", "Remove", "Keep"]))
+console.log(greet('mai')) 
