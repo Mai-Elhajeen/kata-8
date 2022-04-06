@@ -397,14 +397,23 @@ Examples (Input -> Output)
 * [5]                             -> min = 5, max = 5
 */
 
-var min = function(list){
+// var min = function(list){
     
-    return Math.min(...list);;
-}
-console.log(min([4,6,2,1,9,63,-134,566]))
+//     return Math.min(...list);;
+// }
+// console.log(min([4,6,2,1,9,63,-134,566]))
 
-var max = function(list){
+// var max = function(list){
     
-    return Math.max(...list);;
-}
-console.log(max([4,6,2,1,9,63,-134,566]))
+//     return Math.max(...list);;
+// }
+// console.log(max([4,6,2,1,9,63,-134,566]))
+
+// ************************************************************************************************************************
+
+// ? Thinkful - List and Loop Drills: Lists of lists
+/*
+You have a two-dimensional list in the following format:
+data = [[2, 5], [3, 4], [8, 7]]
+Each sub-list contains two items, and each item in the sub-lists is an integer.
+*/
