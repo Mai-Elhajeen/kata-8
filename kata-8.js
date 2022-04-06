@@ -417,3 +417,19 @@ You have a two-dimensional list in the following format:
 data = [[2, 5], [3, 4], [8, 7]]
 Each sub-list contains two items, and each item in the sub-lists is an integer.
 */
+
+// function processData(data){
+//     let result = 1; 
+//     for(let i=0; i<data.length; i++){
+//         result *= data[i][0] - data[i][1];
+//     }
+//     return result;
+// }
+// console.log(processData([[2, 5], [3, 4], [8, 7]]));
+
+
+processData = (data) => {
+    const result = data.map((num) => num[0] - num[1]);
+    return result.reduce((c, n) => c * n);
+}
+console.log(processData([[2, 5], [3, 4], [8, 7]]));
