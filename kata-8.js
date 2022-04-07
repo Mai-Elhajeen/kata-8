@@ -428,8 +428,24 @@ Each sub-list contains two items, and each item in the sub-lists is an integer.
 // console.log(processData([[2, 5], [3, 4], [8, 7]]));
 
 
-processData = (data) => {
-    const result = data.map((num) => num[0] - num[1]);
-    return result.reduce((c, n) => c * n);
+// processData = (data) => {
+//     const result = data.map((num) => num[0] - num[1]);
+//     return result.reduce((c, n) => c * n);
+// }
+// console.log(processData([[2, 5], [3, 4], [8, 7]]));
+
+// ************************************************************************************************************************
+
+// ? Count Odd Numbers below n
+/*
+Given a number n, return the number of positive odd numbers below n, EASY!
+
+Examples (Input -> Output)
+* 7  -> 3 (because odd numbers below 7 are [1, 3, 5])
+* 15 -> 7 (because odd numbers below 15 are [1, 3, 5, 7, 9, 11, 13])
+*/
+
+function oddNum(n){
+    return Math.floor(n / 2)
 }
-console.log(processData([[2, 5], [3, 4], [8, 7]]));
+console.log(oddNum(15))
