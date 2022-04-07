@@ -445,3 +445,7 @@ Examples (Input -> Output)
 * 15 -> 7 (because odd numbers below 15 are [1, 3, 5, 7, 9, 11, 13])
 */
 
+function oddNum(n){
+    return Math.floor(n / 2)
+}
+console.log(oddNum(15))
