@@ -445,7 +445,17 @@ Examples (Input -> Output)
 * 15 -> 7 (because odd numbers below 15 are [1, 3, 5, 7, 9, 11, 13])
 */
 
-function oddNum(n){
-    return Math.floor(n / 2)
+// function oddNum(n){
+//     return Math.floor(n / 2)
+// }
+// console.log(oddNum(15))
+
+// ? Remove String Spaces
+/*
+Simple, remove the spaces from the string, then return the resultant string.
+*/
+
+function noSpace(x){
+    return x.replace(/ /g , '')
 }
-console.log(oddNum(15))
+console.log(noSpace('mai   yahia   ismail   elhajeen'));
