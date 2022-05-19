@@ -509,13 +509,27 @@ All values will be positive integers or floats, or zero.
 Consider an array/list of sheep where some sheep may be missing from their place. 
 We need a function that counts the number of sheep present in the array (true means present).
 */
-function countSheeps(arrayOfSheep) {
-    // TODO May the force be with you
-    let sum = 0
-    for(let i =0; i < arrayOfSheep.length; i++){
-        if (arrayOfSheep[i] === true){
-            sum ++
-        }
-    }
-    return sum
+// function countSheeps(arrayOfSheep) {
+//     // TODO May the force be with you
+//     let sum = 0
+//     for(let i =0; i < arrayOfSheep.length; i++){
+//         if (arrayOfSheep[i] === true){
+//             sum ++
+//         }
+//     }
+//     return sum
+// }
+
+// ************************************************************************************************************************
+
+// ?Convert a String to a Number!
+/*
+We need a function that can transform a string into a number. What ways of achieving this do you know?
+Note: Don't worry, all inputs will be strings, and every string is a perfectly valid representation of an integral number.
+Examples
+"1234" --> 1234 
+*/
+const stringToNumber = function(str){
+    // put your code here
+    return Number(str);
 }
