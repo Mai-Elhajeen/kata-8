@@ -473,8 +473,13 @@ with size 4 should return : '1010'
 with size 12 should return : '101010101010'.
 The size will always be positive and will only use whole numbers.
 */
-function stringy(size) {
-    // your code here   
-    const string = ''
-    return string.padStart(size, '10')
+
+// function stringy(size) {
+//     // your code here   
+//     const string = ''
+//     return string.padStart(size, '10')
+// }
+
+function stringy (size) {
+    return ''.padStart(size, '10')
 }
