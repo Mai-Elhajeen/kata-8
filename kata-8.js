@@ -480,6 +480,10 @@ The size will always be positive and will only use whole numbers.
 //     return string.padStart(size, '10')
 // }
 
-function stringy (size) {
-    return ''.padStart(size, '10')
-}
+// function stringy (size) {
+//     return ''.padStart(size, '10')
+// }
+
+// ************************************************************************************************************************
+
+// ? Plural
