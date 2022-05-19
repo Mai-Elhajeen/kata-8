@@ -497,7 +497,11 @@ All values will be positive integers or floats, or zero.
 //     return (n !== 1)
 // }
 
-function plural(n) {
-    // ...
-    return !(n === 1)
-}
+// function plural(n) {
+//     // ...
+//     return !(n === 1)
+// }
+
+// ************************************************************************************************************************
+
+// ? Counting sheep...
