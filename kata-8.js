@@ -529,3 +529,7 @@ Note: Don't worry, all inputs will be strings, and every string is a perfectly v
 Examples
 "1234" --> 1234 
 */
+const stringToNumber = function(str){
+    // put your code here
+    return Number(str);
+}
