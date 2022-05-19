@@ -450,12 +450,18 @@ Examples (Input -> Output)
 // }
 // console.log(oddNum(15))
 
+// ************************************************************************************************************************
+
 // ? Remove String Spaces
 /*
 Simple, remove the spaces from the string, then return the resultant string.
 */
 
-function noSpace(x){
-    return x.replace(/ /g , '')
-}
-console.log(noSpace('mai   yahia   ismail   elhajeen'));
+// function noSpace(x){
+//     return x.replace(/ /g , '')
+// }
+// console.log(noSpace('mai   yahia   ismail   elhajeen'));
+
+// ************************************************************************************************************************
+
+// ? Stringy Strings
